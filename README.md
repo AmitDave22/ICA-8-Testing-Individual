@@ -1,6 +1,6 @@
 # ICA-8-Testing-Individual
 
-#Problem Description
+# Problem Description
 
 To write a Test-Driven Development program to find the number of empty urinals from each of the binary strings.
 
