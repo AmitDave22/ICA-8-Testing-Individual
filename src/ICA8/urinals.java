@@ -1,4 +1,5 @@
 // Author : Amit Dave
+package ICA8;
 import java.io.File;
 import java.util.Scanner;
 import java.io.*;
@@ -7,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class urinals{
-    static Boolean goodString(String str)
+    public static Boolean goodString(String str)
     {
         int len = str.length();
         for(int i=1; i<len; i++)
@@ -20,7 +21,7 @@ public class urinals{
         }
         return true;
     }
-    int countUrinals(String str)
+    public static int countUrinals(String str)
     {   int count=0;
         int len = str.length();
         if(!goodString(str))
@@ -62,7 +63,7 @@ public class urinals{
         }
         return filename;
     }
-    void writeToFile(int a, String filename)
+    public static void writeToFile(int a, String filename)
     {
         try
         {
@@ -90,10 +91,10 @@ public class urinals{
             while (scr.hasNextLine()) {
                 String line = scr.nextLine();
                 int a = this.countUrinals(line);
-                this.writeToFile(a,str);
+                writeToFile(a,str);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Could not read file!");
         }
     }
 
