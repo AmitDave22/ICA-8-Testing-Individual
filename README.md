@@ -10,4 +10,4 @@ My goal here was to create 2 files:
 
 2. urinalsTest.java : To write all unit tests and handle exceptional cases
 
-A rule.txt will need to be present in the src folder since there are tests based off it. 
+A rule.txt will need to be present in the src folder since there are tests based off it. The urinals.java will create it automatically.
