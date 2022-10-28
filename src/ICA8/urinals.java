@@ -44,7 +44,7 @@ public class urinals{
     String getOutputFileName()
     {
 
-        String filename = "src/rule.txt";
+        String filename = "rule.txt";
         int count=0;
         File file = new File(filename);
 
@@ -83,7 +83,7 @@ public class urinals{
     }
     void readFile(String filename)
     {
-        String f = "src/" + filename;
+        String f =  filename;
         try {
             File file = new File(f);
             Scanner scr = new Scanner(file);
